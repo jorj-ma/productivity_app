@@ -1,4 +1,5 @@
-Install the required packages and activate the virtual environment:
+# Productivity application setup guide
+## 1.Install the required packages and activate the virtual environment:
 
 Bash
 `pipenv install`

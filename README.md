@@ -24,3 +24,5 @@ Run the seed script to create initial test data:
 Start the development server:
 
 `flask run`
+
+Use an API client like curl or postman to test the endpoints

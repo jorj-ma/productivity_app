@@ -6,7 +6,7 @@
 `pipenv shell`
 Note: If you encounter Python version mismatches, update your Pipfile to match your local Python version (e.g., 3.10 or 3.12).
 
-## Database Initialization
+## 2.Database Initialization
 Prepare the database schema using Flask-Migrate:
 
 `flask db init`
@@ -15,12 +15,12 @@ Prepare the database schema using Flask-Migrate:
 
 `flask db upgrade`
 
-## Populating the Database
+## 3.Populating the Database
 Run the seed script to create initial test data:
 
 `python seed.py`
 
-## Running the Application
+## 4.Running the Application
 Start the development server:
 
 `flask run`

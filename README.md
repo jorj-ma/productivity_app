@@ -43,13 +43,27 @@ python seed.py
 ```
 
 ## Running the Application
+The CLI client expects the backend API to be available at `http://localhost:5000`.
 Start the development server:
 
 ```bash
 flask run
 ```
+or
+```
+python3 app.py
+```
 
-Use an API client like curl or postman to test the endpoints.
+## Testing the endpoints
+Based on the current CLI and tests, the API includes:
+- `POST /signup` - signup user
+-  `POST /login` - login user
+-  `DELETE /logout` - delete an instance of user
+-  `GET /me` - show my profile
+-  `GET /notes` - list notes by page
+-  `POST /notes` - add an instance of notes
+-  `PATCH /notes/<int:note_id>` - update an instance of notes by id
+-  `DELETE /notes/<int:note_id>` - delete an instance of notes by id
 
 ## Author
 - Anzigale George

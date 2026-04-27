@@ -1,28 +1,61 @@
-# Productivity application setup guide
-## 1.Install the required packages and activate the virtual environment:
+# Productivity application
+This application allows users to track personal data.
+It implements the following:
+- Full authentication
+- CRUD endpoints and pagination
+- Secure access controls so users cannot view or edit each other’s data
+- 
+## Prerequisites
+- Python 3.8+
+- `pipenv`
+
+## Install the required packages and activate the virtual environment:
 
 
-`pipenv install`
-`pipenv shell`
+```bash
+pipenv install
+```
+```
+pipenv shell
+```
 Note: If you encounter Python version mismatches, update your Pipfile to match your local Python version (e.g., 3.10 or 3.12).
 
-## 2.Database Initialization
+## Database Initialization
 Prepare the database schema using Flask-Migrate:
 
-`flask db init`
+```bash
+flask db init
+```
 
-`flask db migrate -m "Initial migration`
+```bash
+flask db migrate -m "Initial migration
+```
 
-`flask db upgrade`
+```bash
+flask db upgrade
+```
 
-## 3.Populating the Database
+## Populating the Database
 Run the seed script to create initial test data:
 
-`python seed.py`
+```bash
+python seed.py
+```
 
-## 4.Running the Application
+## Running the Application
 Start the development server:
 
-`flask run`
+```bash
+flask run
+```
 
-Use an API client like curl or postman to test the endpoints
+Use an API client like curl or postman to test the endpoints.
+
+## Author
+- Anzigale George
+
+## Contributions
+Contributions are welcome. Open an issue with  a clear description of the proposed improvements.
+
+## License
+The code is open for use.
